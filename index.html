@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container,
+      .swiper-wrapper,
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: flex;
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-slide:nth-child(1) {
+        background: #d8e2dc;
+      }
+      .swiper-slide:nth-child(2) {
+        background: #ffe5d9;
+      }
+      .swiper-slide:nth-child(3) {
+        background: #ffcad4;
+      }
+      .swiper-slide:nth-child(4) {
+        background: #f4acb7;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 20%;
+      }
+      .swiper-slide h1 {
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px 36px;
+        border-radius: 10px;
+        font-size: 4vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="/what-stoicism-teaches-us-about-how-to-be-a-man_q3kr.jpg"
+            alt=""
+          />
+          <h1>This Text Is For Test(1)</h1>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/Landscape-Color.jpg"
+            alt=""
+          />
+          <h1>This Text Is For Test(2)</h1>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/0_ihTZPO4iffJ8n69_.jpg"
+            alt=""
+          />
+          <h1>This Text Is For Test(3)</h1>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/0_wZAcNrIWFFjuJA78.jpg"
+            alt=""
+          />
+          <h1>This Text Is For Test(4)</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        direction: "vertical",
+        mousewheelControl: true,
+        slidesPerView: 1,
+        // freeMode: true,
+        // freeModeSticky: true
+      });
+    </script>
+  </body>
+</html>
